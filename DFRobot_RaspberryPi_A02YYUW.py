@@ -41,7 +41,7 @@ class DFRobot_A02_Distance:
     '''
       @brief    Sensor initialization.
     '''
-    self._ser = serial.Serial("/dev/ttyAMA0", 9600)
+    self._ser = serial.Serial("/dev/serial0", 9600)
     if self._ser.isOpen() != True:
       self.last_operate_status = self.STA_ERR_SERIAL
 
