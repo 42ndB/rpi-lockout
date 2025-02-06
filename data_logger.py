@@ -24,7 +24,7 @@ from DFRobot_RaspberryPi_A02YYUW import DFRobot_A02_Distance as Board
 board = Board()
 
 # Button GPIO setup
-BUTTON_PIN = 4  # Change to your button's GPIO pin
+BUTTON_PIN = 18  # Change to your button's GPIO pin
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)  # Adjust to PUD_DOWN if necessary
 
